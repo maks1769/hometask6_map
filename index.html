@@ -16,8 +16,8 @@
 
         var customMap = function(arr, func) {
             var newArray = [];
-            for (var i = 0; i < arr.length; i += 1) {
-                newArray.push(func(arr[i]));
+            for (var i = 0; i < arr.length; i++) {
+                newArray.push(func(arr[i], i, arr));
             }
             return newArray;
         };
