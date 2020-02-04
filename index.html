@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [1, 2, 3];
+        var toSqrt = function (item) {
+            return item ** 2;
+        };
+
+        var customMap = function(arr, func) {
+            var newArray = [];
+            for (var i = 0; i < arr.length; i += 1) {
+                newArray.push(func(arr[i]));
+            }
+            return newArray;
+        };
+
+        console.log(customMap(array, toSqrt));
+    </script>
+</body>
+</html>
